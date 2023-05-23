@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    p {
+      text-align: justify;
+      margin-bottom: 10px; 
+    }
+   h3 {
+      line-height: 1;
+    }
+
+    figure {
+      position: relative;
+      text-align: center;
+    }
+
+    figcaption {
+      position: relative;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(6, 19, 41);
+      padding: 5px;
+      font-weight: bold;
+    }
+
+    nav {
+  padding: 10px;
+  background-color: #78787d;
+    }
+
+  </style> 
+  <title>Ritchie</title>
+
+<section id="yo">
+        <div class="container">
+            <h2>Técnica de Ritchie</h2>
+               <nav>
+                <h4>Es una técnica de sedimentación que permite aumentar la probabilidad de identificar quistes, huevos y larvas de parásitos como complemento al examen directo.</h4>
+                  Consiste en homogeneizar la materia fecal con agua o solución salina, tamizar, centrifugar (1-2 minutos), dacantar y resuspender, luego lavar y agregar formalina 10% y éter, tapar y agitar vigorosamente. Después, centrifugar (3 minutos), Finalmente colocar en un portaobjetos con lugol y observar al microscopio. (Sánchez-Rivera, et.al, 2006)
+                <nav>
+
+            <div class="programas">
+                <div class="carta">
+                    <h3>Fundamento</h3>
+                    <p>•Se basa en la sedimentación espontánea por la fuerza centrífuga de los parásitos en una solución <button id="myButtonformol" onclick="mostrarTexto('textoformol')"style="background-color: #30343d; color: white;">formalina</button>-<button id="myButtoneter" onclick="mostrarTexto('textoeter')"style="background-color: #30343d; color: white;">éter</button>, que provoca la concentración de los organismos en el fondo del tubo de ensayo, lo que mejora su visualización al microscopio; se informa el número de huevos por gramo de materia fecal en la cantidad mínima obtenida mediante la técnica del coprológico directo. (Salvatella. R, Eirale.C, 1996)</p>
+                      <p id="textoformol" style="display: none; color: #cad1e3;">Ayuda a mantener la integridad de las formas parasitariasque se concentran.</p>
+                       <p id="textoeter" style="display: none; color: #cad1e3;">Elimina los detritus orgánicos y a separar los elementos parasitarios.</p>
+
+            
+                     
+                    
+    <br>
+    <figure>
+    <img src="img/r2.jpg"width="250" height="250">
+    <figcaption>Método de Ritchie (2012), Las 4 interfases después de la centrifugación.</figcaption>
+      </figure>
+
+                </div>
+                <div class="carta">
+                    <h3>Puntos críticos</h3>
+                     <p>•Realizar una adecuada recolección de la muestra de heces.</p>
+                     <p>•Evitar la contaminación con orina u otros materiales. (Salvatella. R, Eirale.C, 1996)</p>
+                     <p>•Es altamente sensible, pero requiere de experiencia en la observación microscópica para distinguir y contar los parásitos.</p>
+                     <P>•La centrifugación suele realizarse a 1500 o 2000 rpm</P>
+                     <p>•La sedimentación es menos eficaz que la flotación para la concentración de quistes de protozoarios y abundantes huevos, pero es más útil para la búsqueda de huevos de esquistosoma y operculados. (Sánchez-Rivera, et.al, 2006)
+                </div>
+                <div class="carta">
+                    <h3>Parásitos detectables</h3>
+                    <p><button id="myButtonHelmintos" onclick="mostrarTexto('textoHelmintos')"style="background-color: #30343d; color: white;">•Helmintos</button></p>
+<p id="textoHelmintos" style="display: none; color: #cad1e3;"><i>Ascaris lumbricoides, Trichuris trichiura, Enterobius vermicularis, Ancylostoma duodenale y Necator americanus</i></p>
+
+<p><button id="myButtonProtozoarios" onclick="mostrarTexto('textoProtozoarios')"style="background-color: #30343d; color: white;">•Protozoarios</button></p>
+<p id="textoProtozoarios" style="display: none; color: #cad1e3;"><i>Giardia intestinalis, Entamoeba histolytica, Entamoeba dispar, Isospora belli, Entamoeba coli, Endolimax nana, Iodomeba butschilii, Cryptosporidium spp., Blastocystis hominis y Cyclospora cayetanensis</i> (Palomino. A, et.al, 2018)</p>
+
+<script>
+    function mostrarTexto(textId) {
+        var texto = document.getElementById(textId);
+        if (texto.style.display === "none") {
+            texto.style.display = "block";
+        } else {
+            texto.style.display = "none";
+        }
+    }
+</script>
+          
+                    <figure>
+    <img src="img/rrr.jpg"width="250" height="270">
+    <figcaption>CDC: a) Huevo de <i>T.trichiura</i>, b) Larvas filariformes de <i>Ancylostoma duodenale</i>, c) Ooquiste inmaduro de <i>C. belli</i>, d)Ooquistes de <i>Cyclospora cayetanensis</i></figcaption>
+  </figure>
+                </div>  
+            </div>
+        </div>
+    </section>

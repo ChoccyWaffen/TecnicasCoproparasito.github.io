@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    p {
+      text-align: justify;
+      margin-bottom: 10px; 
+    }
+   h3 {
+      line-height: 1;
+    }
+
+    figure {
+      position: relative;
+      text-align: center;
+    }
+
+    figcaption {
+      position: relative;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(6, 19, 41);
+      padding: 5px;
+      font-weight: bold;
+    }
+
+  </style> 
+  <title>Técnica de Stoll-Hausheer</title>
+
+<section id="yo">
+        <div class="container">
+            <h2>Técnica de Stoll-Hausheer</h2>
+               <nav>
+                <h4>Técnica cuantitativa utilizada para el recuento de huevos de helmintos en las muestras fecales.
+Permite determinar la carga parasitaria en un individuo infectado. (Sara Ortigoza Gutiérrez, Martha Cruz Aguilar, 2011)
+<br>Es el procedimiento más ampliamente usado con el propósito de realizar una evaluacion de la intensidad de ciertas helmintiasis.</h4>
+<p>Consiste en obtener una suspensión homogénea de muestra de materia fecal e hidróxido de sodio 0.1 N. dejar precipitar los huevos y restos  y colocar con un aplicador una gota grande (0.15ml) de muestra en un portaobjetos para su posterior observación microscópica y recuento. (OPS, 2019)  (Sara Ortigoza Gutiérrez, Martha Cruz Aguilar, 2011)</p>
+                <nav>
+
+            <div class="programas">
+                <div class="carta">
+                    <h3>Fundamento</h3>
+                    <p>•Se basa en los principios de saponificación, homogenización y aclaración. El NaOH 0.1 N al ponerse en contacto con las grasas de las heces se saponifica, hace que los huevos de los parásitos sean menos pegajosos, desinfecta y desodoriza la muestra, con ello es fácil hacer el<button id="myButtonrecuento" onclick="mostrarTexto('textorecuento')"style="background-color: #30343d; color: white; width: 90px; margin: 3px;">recuento.</button> (Sara Ortigoza Gutiérrez, Martha Cruz Aguilar, 2011)</p>
+                    <p id="textorecuento" style="display: none; color: #cad1e3;"> La estimación (huevos por gramo) obtenida variará según la consistencia de las heces. Los
+valores de corrección que deben usarse para convertir la estimación son:
+ <br>x 1,5 para deposición formada
+ <br>x 2 para deposición semiformada
+ <br>x 3 para deposición semilíquida
+ <br>x 4 para deposición líquida. (Martinez. V, 2012)</p>
+
+                      <figure>
+    <img src="img/s.jpg"width="300" height="300">
+    <figcaption>Hematología clínica, (2022), preparación técnica de Stoll.</figcaption>
+  </figure>
+                </div>
+                <div class="carta">
+                    <h3>Puntos críticos</h3>
+                     <p>•Debido a que la cantidad de muestra es muy pequeña en
+comparación con el volumen de hidróxido de sodio, las helmintiosis moderadas son más
+difíciles de evaluar</p>
+<p>•Los recuentos de huevos en muestras líquidas generalmente no son seguros; los recuentos más precisos son los obtenidos de muestras formadas o semiformadas. </p>
+                 </div>
+                <div class="carta">
+                    <h3>Parásitos detectables</h3>
+                                        <p><button id="myButtonHelmintos" onclick="mostrarTexto('textoHelmintos')"style="background-color: #30343d; color: white; width: 90px; margin: 3px;">•Helmintos</button></p>
+<p id="textoHelmintos" style="display: none; color: #cad1e3;"><i>Ascaris lumbricoides, Trichuris trichiura, Strongyloides stercoralis, Enterobius vermicularis, Necator americanus y Ancylostoma duodenale</i></p>
+
+<p><button id="myButtonPlatelmintos" onclick="mostrarTexto('textoPlatelmintos')"style="background-color: #30343d; color: white; width: 90px; margin: 3px;">•Platelmintos</button></p>
+<p id="textoPlatelmintos" style="display: none; color: #cad1e3;"><i>Hympenolepis nana, Hymenolepis diminuta, Taenia saginata, Taenia solium.</i> (Sara Ortigoza Gutiérrez, Martha Cruz Aguilar, 2011)</p>
+
+<script>
+    function mostrarTexto(textId) {
+        var texto = document.getElementById(textId);
+        if (texto.style.display === "none") {
+            texto.style.display = "block";
+        } else {
+            texto.style.display = "none";
+        }
+    }
+</script>
+          
+                    <figure>
+    <img src="img/b.jpg"width="250" height="180">
+    <figcaption>CDC: a) Huevo fecundado de <i>A. lumbricoides</i>, b) Huevo de <i>Taenia sp.</i>, c) Huevp de <i>H. diminuta</i>, d)Larva filariforme de <i>S.stercoralis</i></figcaption>
+  </figure>
+                </div>  
+            </div>
+        </div>
+    </section>

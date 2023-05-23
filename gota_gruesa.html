@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    p {
+      text-align: justify;
+      margin-bottom: 10px; 
+    }
+   h3 {
+      line-height: 1;
+    }
+
+    figure {
+      position: relative;
+      text-align: center;
+    }
+
+    figcaption {
+      position: relative;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(6, 19, 41);
+      padding: 5px;
+      font-weight: bold;
+    }
+
+    nav {
+  padding: 10px;
+  background-color: #4f5a61;
+    }
+
+  </style> 
+  <title>Gota Gruesa</title>
+
+<section id="yo">
+        <div class="container">
+            <h2>Gota Gruesa</h2>
+               <nav>
+                <h4>Utilizada principalmente para la detección de parásitos del género Plasmodium, causante de la malaria.</h4>
+                <br>Consiste en el análisis de una muestra de sangre concentrada y deshemoglobinizada.(Healthwise, 2022)
+                <br> A diferencia de un frotis tradicional donde solo se puede examinar una zona limitada, esta técnica tiene la ventaja de revisar prácticamente la totalidad de la gota de sangre. (Rodríguez. M, 2019)
+                <nav>
+
+            <div class="programas">
+                <div class="carta">
+                    <h3>Fundamento</h3>
+                    <p>•Basado en la identificación por coloración diferencial y forma, libre o intracelular de los parásitos capaces de infectar los glóbulos rojos y su presencia en la sangre de los individuos infectados.(Delimac, 2014)</p>
+                    <p>•Al extender la muestra en un portaobjetos, dejarla secar y <button id="myButtonteñir" onclick="mostrarTexto('textoteñir')"style="background-color: #30343d; color: white;">teñir</button>, los parásitos se concentran en un área, lo que facilita su detección al microscopio.</p>
+<p id="textoteñir" style="display: none; color: #cad1e3;">La tinción más comúnmente utilizada es la tinción de Giemsa aunque también se puede utilizar la tinción de Wrigh, Field y Romanowsky.</p>
+
+    <br>
+    <figure>
+    <img src="img/gop.jpg"width="200" height="200">
+    <figcaption>Deliamc, (2014), Elaboración de extendido de sangre periférica</figcaption>
+      </figure>
+
+                </div>
+                <div class="carta">
+                    <h3>Puntos críticos</h3>
+                     <p>•La correcta preparación y tinción de la muestra son esenciales para evitar resultados falsos negativos o positivos.(Delimac, 2014)</p>
+                     <p>•La calidad de la muestra de sangre es fundamental para obtener resultados precisos.</p>
+                     <p>•Seguir un procedimiento adecuado de extracción y preparación de la muestra.</p>
+                     <p>•La toma de muestra idealmente debe hacerse por punción capilar.(Healthwise, 2022)</p>
+                     <p>•Contar con personal entrenado en la identificación de los estadios de los parásitos dentro de los glóbulos rojos.</p>
+                     <p>•Puede requerir un mayor tiempo de procesamiento en comparación con otras técnicas.(Delimac, 2014)</p>
+                </div>
+                <div class="carta">
+                    <h3>Parásitos detectables</h3>
+                    <p><button id="myButtonPlasmodium" onclick="mostrarTexto('textoPlasmodium')"style="background-color: #30343d; color: white;">•Plasmodium</button></p>
+<p id="textoPlasmodium" style="display: none; color: #cad1e3;"><i>Plasmodium falciparum, Plasmodium vivax, Plasmodium malariae y Plasmodium ovale.</i> (Healthwise, 2022)
+</p>
+<script>
+    function mostrarTexto(textId) {
+        var texto = document.getElementById(textId);
+        if (texto.style.display === "none") {
+            texto.style.display = "block";
+        } else {
+            texto.style.display = "none";
+        }
+    }
+</script>
+                    <figure>
+    <img src="img/R.jpg"width="250" height="200">
+    <figcaption>Steven Glenn, Frotis sanguíneo que muestra la presencia de trofozoítos de <i>Plasmodium vivax</i> infectando eritrocitos.</figcaption>
+  </figure>
+                </div>  
+            </div>
+        </div>
+    </section>

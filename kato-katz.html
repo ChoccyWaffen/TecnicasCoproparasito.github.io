@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    p {
+      text-align: justify;
+      margin-bottom: 10px; 
+    }
+   h3 {
+      line-height: 1;
+    }
+
+    figure {
+      position: relative;
+      text-align: center;
+    }
+
+    figcaption {
+      position: relative;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(6, 19, 41);
+      padding: 5px;
+      font-weight: bold;
+    }
+
+  </style> 
+  <title>Técnica de Kato-Katz</title>
+
+<section id="yo">
+        <div class="container">
+            <h2>Técnica de Kato-Katz</h2>
+               <nav>
+                <h4>Es una técnica de cuantificación que se utiliza para el recuento de huevos de helmintos en muestras fecales, principalmente <i>Schistosoma mansoni.</i> (Rina G., 2008)</h4>
+                <p>La Organización Mundial de la Salud (OMS) la recomienda para el diagnóstico cualitativo y cuantitativo de las infecciones intestinales humanas por geohelmintos. (Vázquez Martínez, et.al 2012),(Isabel Cristina et.al, 2012)</p>
+                <p>Consiste en depositar materia fecal sobre un portaobjeto, tamizar la muestra con una malla metálica de alambre, cubrir con celofán previamente embebido con la solución de glicerol con verde de malaquita al 3%, invertir el portaobjetos y apretar la muestra contra el celofán, colocar el celofán hacia arriba, dejar reposar para que el agua se evapore y el glicerol aclare y visualizar al microscopio.(Johny, 2014)</p>
+
+                <nav>
+
+            <div class="programas">
+                <div class="carta fundamento">
+                    <h3>Fundamento</h3>
+                    <p>•Se basa en la detección de huevos de helmintos en muestras de heces. La muestra de heces se mezcla con una solución de glicerina y se coloca en una lámina portaobjetos con un tamiz de malla fina. La glicerina permite la  <button id="myButtonaclarar" onclick="mostrarTexto('textoaclarar')"style="background-color: #30343d; color: white;">aclaración</button> de los huevos, el verde de malaquita contraste y al aplicar presión sobre la muestra, los huevos y larvas pasan a través del tamiz y quedan depositados en la lámina para su posterior observación microscópica y <button id="myButtonrecuento" onclick="mostrarTexto('textorecuento')"style="background-color: #30343d; color: white;">recuento.</button>(Pan Am J, 2002),  (Rina G., 2008).</p> 
+                     <p id="textoaclarar" style="display: none; color: #cad1e3;">Se puede aclerar el aclaramiento colocando el portaobjetos en incubación a 40°C o a luz solar directa.</p>
+                    <p id="textorecuento" style="display: none; color: #cad1e3;">El número de huevos se calcula con la siguiente fórmula: <br> Huevos/ g de heces = Número huevos contados (20x) / factor de consistencia
+                      <br> El factor de consistencia es 1 para deposición sólida, 2 para semisólida y 3 para la líquida.(Martinez. V, 2012)</p>
+
+                       <figure>
+    <img src="img/cc.jpg"width="250" height="200">
+    <figcaption>Muhammed Hossain (2018), Preparación de portaobjetos Kato Katz</figcaption>
+  </figure>
+                        <figure>
+    <img src="img/k.jpg"width="180" height="150">
+    <figcaption>a) muestra sin aclarar, b) muestra aclarada.</figcaption>
+  </figure>
+                </div>
+               <div class="carta puntos-criticos">
+                    <h3>Puntos críticos</h3>
+                     <p>•La uniformidad del espesor de la película.</p>
+                     <p>•La visulazación microscópica puede ser no muy clara.</p>
+                     <p>•Evitar excederse en el tiempo de aclarado (suele ser de 10 minutos).</p>
+                    <p>•Tener cuidado al presionar la muestra en la lámina portaobjetos para evitar dañr los huevos y larvas.(Vázquez Martínez, et.al 2012)</p>
+                    <p>•Poco sencible para larvas y protozoos. (Rina G., 2008)</p>
+                    <p>•Su sensibilidad depende de la consistencia de las heces.(Pan Am J, 2002).</p>
+                    <p>•La cantidad de heces muestreadas es limitada.</p>
+                </div>
+                <div class="carta parasitos-detectables">
+                    <h3>Parásitos detectables</h3>
+                                        <p><button id="myButtonHelmintos" onclick="mostrarTexto('textoHelmintos')"style="background-color: #30343d; color: white;">•Helmintos</button></p>
+<p id="textoHelmintos" style="display: none; color: #cad1e3;"><i>Schistosoma mansoni, Ascaris lumbricoides, Trichuris trichiura, Strongyloides stercoralis, Necator americanus, Uncinaria sp. y Ancylostoma duodenale. </i></p>
+
+
+<script>
+    function mostrarTexto(textId) {
+        var texto = document.getElementById(textId);
+        if (texto.style.display === "none") {
+            texto.style.display = "block";
+        } else {
+            texto.style.display = "none";
+        }
+    }
+</script>
+          
+                    <figure>
+    <img src="img/c.jpg"width="250" height="180">
+    <figcaption>a) Huevos de <i>S. mansoni</i>, b) Huevos de <i>Trichuris trichiura.</i></figcaption>
+  </figure>
+                </div>  
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    p {
+      text-align: justify;
+      margin-bottom: 10px; 
+    }
+   h3 {
+      line-height: 1;
+    }
+
+    figure {
+      position: relative;
+      text-align: center;
+    }
+
+    figcaption {
+      position: relative;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(6, 19, 41);
+      padding: 5px;
+      font-weight: bold;
+    }
+
+    nav {
+  padding: 10px;
+  background-color: #4f5a61;
+    }
+
+  </style> 
+  <title>Técnica de Faust</title>
+
+<section id="yo">
+        <div class="container">
+            <h2>Técnica de Faust</h2>
+               <nav>
+                <h4>Es una técnica de flotación que permite la detección de huevos y quistes en muestras de heces que se utiliza para el diagnóstico de infecciones por helmintos y protozoarios. (Salvatella. R, Eirale.C, 1996)</h4> Consiste en homogeneizar con solución salina una pequeña porción de la materia fecal, centrifugar, lavar y decantar el íquido sobrenadante, homogenizar con solución de sulfato de zinc, centrifugar, aplicar lugol, colocar en un portaobjetos y observar al microscopio. (Palomino. A, et.al, 2018)(Vázquez Martínez, et.al 2012)
+                <nav>
+
+            <div class="programas">
+                <div class="carta">
+                    <h3>Fundamento</h3>
+                    <p>•Se basa en la diferencia de densidades entre los parásitos y las heces; al centrifugar y mezclar la muestra fecal con una solución sobresaturada de 
+                    <button id="myButtonZinc" onclick="mostrarTexto('textoZinc')"style="background-color: #30343d; color: white;">sulfato de zinc</button>, los huevos y quistes flotan hacia la superficie, donde pueden ser recogidos y observados al microscopio. (Salvatella. R, Eirale.C, 1996)</p>
+                    <p id="textoZinc" style="display: none; color: #cad1e3;">La concentración
+de sulfato de zinc más útil tiene una densidad de 1,18g/ml, por lo general al 33%. 
+<br>Si se trata de muestras fijadas con
+formalina se recomienda emplear una densidad de
+1,20g/ml.</p>
+
+              
+    <br>
+    <figure>
+    <img src="img/ff.jpg"width="300" height="300">
+    <figcaption>Técnica de Faust, Preparación de la muestra.</figcaption>
+      </figure>
+         <figure>
+    <img src="img/fr.jpg"width="200" height="200">
+    <figcaption>Técnica de Faust, interfases.</figcaption>
+      </figure>
+
+
+                </div>
+                <div class="carta">
+                    <h3>Puntos críticos</h3>
+                     <p>•Utilizar una solución de sal adecuadamente preparada.</p>
+                     <p>•Evitar la formación de burbujas durante el proceso de flotación. (García.L, 2023)</p>
+                     <p>•La centrifugación se realiza a 1500 o 2000 rpm (Vázquez Martínez, et.al 2012)</p>
+                     <P>•No es recomendable para huevecillos operculados</P>
+                     <p>•Presenta mayor sensibilidad que especificidad.</p>
+                     <p>•Puede tener una menor sensibilidad para la detección de formas larvarias. (Palomino. A, et.al, 2018)</p>
+                </div>
+                <div class="carta">
+                    <h3>Parásitos detectables</h3>
+                    <p><button id="myButtonHelmintos" onclick="mostrarTexto('textoHelmintos')"style="background-color: #30343d; color: white;">•Helmintos</button></p>
+<p id="textoHelmintos" style="display: none; color: #cad1e3;"><i>Ascaris lumbricoides, Trichuris trichiura, Hymenolepis nana, Enterobius vermicularis, Entamoeba histolytica, Cryptosporidium spp, Strongyloides stercoralis.</i></p>
+                  <p><button id="myButtonProtozoarios" onclick="mostrarTexto('textoProtozoarios')"style="background-color: #30343d; color: white;">•Protozoarios</button></p>
+<p id="textoProtozoarios" style="display: none; color: #cad1e3;"><i>Giardia intestinalis, Entamoeba histolytica, Entamoeba dispar, Isospora belli, Entamoeba coli, Endolimax nana, Iodomeba butschilii, Cryptosporidium spp., Blastocystis hominis, Balantidium coli y Cyclospora cayetanensis</i> (Palomino. A, et.al, 2018)</p>
+                    <script>
+    function mostrarTexto(textId) {
+        var texto = document.getElementById(textId);
+        if (texto.style.display === "none") {
+            texto.style.display = "block";
+        } else {
+            texto.style.display = "none";
+        }
+    }
+</script>
+                    <figure>
+    <img src="img/h.jpg"width="250" height="200">
+    <figcaption>CDC: a) Huevo de <i>H. nana</i>, b) <i>Blastocystis sp.</i>, c) Quiste de <i>E. histolytica/E. dispar
+i</i>, d)<i>Strongyloides stercoralis.</i></figcaption>
+
+  </figure>
+                </div>  
+            </div>
+        </div>
+    </section>

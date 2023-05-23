@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    p {
+      text-align: justify;
+      margin-bottom: 10px; 
+    }
+   h3 {
+      line-height: 1;
+    }
+
+    figure {
+      position: relative;
+      text-align: center;
+    }
+  nav {
+  padding: 10px;
+  background-color: #45484f;
+    }
+
+    figcaption {
+      position: relative;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(6, 19, 41);
+      padding: 5px;
+      font-weight: bold;
+ {
+
+  </style> 
+  <title>Técnica Harada Mori</title>
+
+<section id="yo">
+        <div class="container">
+            <h2>Técnica Harada Mori</h2>
+               <nav>
+                <h4>Es un método de concentración a base de un dispositivo especializado que contiene una solución conservante y un filtro, para la detección de parásitos, especialmente Strongyloides stercoralis y Trichostrongylus spp.
+                  <br>Es útil para la obtención de larvas rabditiformes y filariformes de Anquilostomídeos y Estrongiloideos.
+                (Medios auxiliares, 2022)</h4>
+                Consiste en formar una pasta homogénea con la muestra fecal con una solución de formol-salina y luego dejarla reposar sobre una tira de papel secante en un tubo vertical con solución salina en el fondo (evitando contacto con la muestra) y dejar reposar durante 10 días de 24-28°C.
+                Después, transferir la solución  a un tubo nuevo y agregar formol 5%. Centrifugar y transferir una gota de la solución a un portaobjetos (se puede agregar lugol) y observar al microscopio. (OPS, 2019) (Johny, 2014).
+                <nav>
+
+            <div class="programas">
+                <div class="carta">
+                    <h3>Fundamento</h3>
+                    <p>•Al mezclar la muestra fecal con una solución de formol-salina y luego dejarla reposar en un tubo vertical durante varias horas, los parásitos se preservan gracias a la solución conservante que impide su deterioro y se mueven hacia abajo debido a la gravedad y se concentran en la parte inferior del tubo, donde pueden ser recolectados y observados al microscopio.(Hortensia Magaro et.al, 2015)</p>
+                      <figure>
+    <img src="img/hm.jpg"width="200" height="200">
+    <figcaption>Aguilar Bautista, (2013), preparación de exámen directo</figcaption>
+  </figure>
+                </div>
+                <div class="carta">
+                    <h3>Puntos críticos</h3>
+                     <p>•Adecuado manejo del dispositivo de Harada Mori.</p>
+                     <p>•Limitada en términos de sensibilidad y especificidad. Puede haber casos en los que las larvas no sean detectadas, lo que puede llevar a resultados falsos negativos.</p>
+                    <p>•La muesta no debe estar refrigerada ni fijada.</p>
+                    <p>•Asegurar un almacenamiento adecuado de las muestras para evitar la contaminación y la pérdida de viabilidad de los parásitos.</p>
+                    <p>Se puede agregar carbon activado a la pasta  para aumentar la sensibilidad.</p>
+                </div>
+                <div class="carta">
+                    <h3>Parásitos detectables</h3>
+                                        <p><button id="myButtonHelmintos" onclick="mostrarTexto('textoHelmintos')"style="background-color: #30343d; color: white; width: 90px; margin: 3px;">•Helmintos</button></p>
+<p id="textoHelmintos" style="display: none; color: #cad1e3;"><i>Ascaris lumbricoides, Taenia spp., Strongyloides stercoralis y Trichostrongylus spp., Necator americanus y Ancylostoma duodenale.</i>
+<script>
+    function mostrarTexto(textId) {
+        var texto = document.getElementById(textId);
+        if (texto.style.display === "none") {
+            texto.style.display = "block";
+        } else {
+            texto.style.display = "none";
+        }
+    }
+</script>
+          
+                    <figure>
+    <img src="img/hh.jpg"width="250" height="180">
+    <figcaption>CDC: a) <i>Strongyloides stercoralis</i>, b) Huevos de <i>Trichostrongylus sp.</i></figcaption>
+  </figure>
+                </div>  
+            </div>
+        </div>
+    </section>

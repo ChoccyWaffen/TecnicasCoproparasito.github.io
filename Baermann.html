@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    p {
+      text-align: justify;
+      margin-bottom: 10px; 
+    }
+   h3 {
+      line-height: 1;
+    }
+
+    figure {
+      position: relative;
+      text-align: center;
+    }
+
+    figcaption {
+      position: relative;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(6, 19, 41);
+      padding: 5px;
+      font-weight: bold;
+    }
+        nav {
+  padding: 10px;
+  background-color: #424e54;
+    }
+
+  </style> 
+  <title>Técnica de Baermann</title>
+
+<section id="yo">
+        <div class="container">
+            <h2>Técnica de Baermann</h2>
+               <nav>
+                <h4>Método de sedimentación a base de un sistema especializado utilizado para la detección de larvas de nemátodos y en algunos casos gusanos adultos, de las heces, suelo y tejidos. (OPS, 2019)</h4>
+                <br>Consiste en colocar una muestra fecal en un embudo que contiene una gasa o papel de filtro, dejar reposar en un recipiente con agua caliente y colocar una fuente de luz bajo el aparato, dejar reposar por 3 horas aproxiadamente, trasferir alrededor de 10 mL de sedimento a un tubo cónico, centrifugar y osbservar al microscopio.  (OPS, 2019)
+
+                Es un método de elección eficiente para recobrar larvas de infecciones por <i>Strongyloides stercoralis</i> y trofozoitos de <i>Blantidium spp</i>. 
+                  <br>Es posible, pero raro, encontrar larvas de primer estadio de <i>Angiostrongylus costaricensis</i> (Manual de parasitología, 2013)
+                <nav>
+
+            <div class="programas">
+                <div class="carta">
+                    <h3>Fundamento</h3>
+                    <p>•Las larvas se mueven hacia abajo debido a la gravedad a través de una columna de agua, aprovechando tanto el termotropismo como el hidrotropismo positivo de las larvas para concentrarlas biológicamente (Lau Chong, Carolina, Samalvides Cuba, Frine, & Terashima Iwashita, Angélica, 2005).</p>
+
+                      <figure>
+    <img src="img/v.jpg"width="230" height="230">
+    <figcaption>Montaje del sistema/Aparato de Baermann.</figcaption>
+  </figure>
+                </div>
+                <div class="carta">
+                    <h3>Puntos críticos</h3>
+                     <p>•Es fundamental utilizar agua caliente para promover la migración de las larvas y evitar la contaminación de la muestra.</p>
+                     <p>•Se debe tener en cuenta la duración y temperatura del proceso, ya que pueden afectar la velocidad de migración de las larvas.</p>
+                     <p>•La muestra no debe refrigerarse. (Hortensia Magaro et.al, 2015)</p>
+                     <p>•El aparato  de Baermann tiene dos posibilidades: uno con un vaso de de sedimentación, donde las larvas se recuperan con una pipeta y otro donde se utiliza una jeringa y un tubo de venoclisis. (OPS, 2019)</p>
+                </div>
+                <div class="carta">
+                    <h3>Parásitos detectables</h3>
+                    <p><button id="myButtonNematodos" onclick="mostrarTexto('textoNematodos')"style="background-color: #30343d; color: white; width: 90px; margin: 3px;">•Nematodos</button></p>
+                    <p id="textoNematodos" style="display: none; color: #cad1e3;"><i>Strongyloides stercoralis, Ancylostoma duodenale, Necator americanus, Angiostrongylus costaricensis y Ascaris lumbricoides.  (OPS, 2019)</i></p>
+
+                     <p><button id="myButtonProtozoarios" onclick="mostrarTexto('textoProtozoarios')"style="background-color: #30343d; color: white; width: 90px; margin: 3px;">•Protozoarios</button></p>
+<p id="textoProtozoarios" style="display: none; color: #cad1e3;"><i>Balantidium spp.</i><(Hortensia Magaro et.al, 2015)/p>
+                    
+                                       
+<script>
+    function mostrarTexto(textId) {
+        var texto = document.getElementById(textId);
+        if (texto.style.display === "none") {
+            texto.style.display = "block";
+        } else {
+            texto.style.display = "none";
+        }
+    }
+</script>
+          
+                    <figure>
+    <img src="img/xa.jpg"width="250" height="180">
+    <figcaption>a) Larva filariforme de <i>Strongyloides stercoralis.</i>, b) Trofozoíto de <i>Balantidium coli.</i></figcaption>
+  </figure>
+                </div>  
+            </div>
+        </div>
+    </section>
